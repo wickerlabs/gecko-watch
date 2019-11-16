@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "geck-watch": {
+    "gecko-watch": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/geck-watch",
+            "outputPath": "dist/gecko-watch",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "geck-watch:build"
+            "browserTarget": "gecko-watch:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "geck-watch:build:production"
+              "browserTarget": "gecko-watch:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "geck-watch:build"
+            "browserTarget": "gecko-watch:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "geck-watch-e2e": {
+    "gecko-watch-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "geck-watch:serve"
+            "devServerTarget": "gecko-watch:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "geck-watch:serve:production"
+              "devServerTarget": "gecko-watch:serve:production"
             }
           }
         },
@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "geck-watch"
+  "defaultProject": "gecko-watch",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
