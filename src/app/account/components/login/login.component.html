@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row full-height-90">
+    <!-- login form column -->
+    <div class="col-sm-4 mx-auto  my-auto">
+      <form class="animated zoomIn faster my-auto">
+          <span class="login-form-title text-muted font-weight-bold pb-2">
+            Login
+          </span>
+  
+          <div class="mb-2" data-validate = "Username is required">
+              <mat-form-field class="w-100">
+                <input matInput type="text" placeholder="Username">
+              </mat-form-field>
+          </div>
+          
+          <div class="mb-2">
+              <mat-form-field class="w-100">
+                <input matInput type="password" placeholder="Password">
+              </mat-form-field>
+          </div>
+
+          <div class="alert alert-danger w-100 mb-2"
+          *ngIf="invalidCredentials">
+            Username or Password is incorrect
+          </div>
+          
+          <div class="pt-2 pb-2 w-100">
+            <div class="d-flex">
+              <a [routerLink]="'../reset-credentials'" class="d-flex">
+                Forgot password?
+              </a>
+            </div>
+          </div>
+  
+          <div class="w-100 mt-2">
+              <button mat-flat-button color="primary"
+              class="w-100"
+              [disabled]="isLoggingIn"
+              (click)="login()"
+              >
+                  {{ isLoggingIn ? 'Logging...' : 'Login'}}
+              </button>
+          </div>
+
+          <div class="pt-2 pb-2 w-100">
+            <div class="d-flex text-muted">
+              Not a member?
+              <a [routerLink]="'../signup'" class="d-flex pl-2">
+                Create account
+              </a>
+            </div>
+          </div>
+  
+        </form>
+  </div>
+  <!-- End of login form column -->
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="row full-height-90">
+      <!-- login form column -->
+      <div class="col-sm-4 mx-auto  my-auto">
+        <form class="animated zoomIn faster my-auto">
+            <span class="login-form-title text-muted font-weight-bold pb-2">
+              Sign Up
+            </span>
+
+            <div class="mb-2">
+              <mat-form-field class="w-100">
+                <input matInput type="text" placeholder="First name">
+              </mat-form-field>
+            </div>
+
+            <div class="mb-2">
+              <mat-form-field class="w-100">
+                <input matInput type="text" placeholder="Last name">
+              </mat-form-field>
+            </div>
+
+            <div class="mb-2">
+              <mat-form-field class="w-100">
+                <input matInput type="text" placeholder="Username">
+              </mat-form-field>
+            </div>
+
+            <div class="mb-2">
+              <mat-form-field class="w-100">
+                <input matInput type="password" placeholder="Password">
+              </mat-form-field>
+            </div>
+
+            <div class="mb-2">
+              <mat-form-field class="w-100">
+                <input matInput type="password" placeholder="Re-type Password">
+              </mat-form-field>
+            </div>
+            
+            <div class="mb-2">
+                <mat-form-field class="w-100">
+                  <input matInput type="email" placeholder="Email" [formControl]="email" required>
+                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+            </div>
+  
+            <div class="alert alert-danger w-100 mb-2"
+            *ngIf="invalidCredentials">
+              Email is in-valid
+            </div>
+    
+            <div class="w-100 mt-2">
+
+                <button mat-flat-button color="primary"
+                class="w-100"
+                [disabled]="isSigningUp"
+                (click)="signUp()"
+                >
+                {{ isSigningUp ? 'Signing up...' : 'Sign Up'}}
+                </button>
+            </div>
+    
+          </form>
+    </div>
+    <!-- End of login form column -->
+    </div>
+  </div>
+  
