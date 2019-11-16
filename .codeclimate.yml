@@ -8,6 +8,8 @@ exclude_patterns:
   - 'e2e/'
   - 'demo/assets/'
   - 'demo/typings.d.ts'
+  - 'src/app/store/actions/'
+  - 'src/app/store/reducers/'
   - '**/*.spec.ts'
   - '**/karma.conf.js'
   - 'demo/polyfills.ts'

@@ -1,3 +1,8 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) 
+[![Build Status](https://travis-ci.org/wickerlabs/gecko-watch.svg?branch=master)](https://travis-ci.org/wickerlabs/gecko-watch)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e6b6f1f722854422d8a4/maintainability)](https://codeclimate.com/github/wickerlabs/gecko-watch/maintainability)
+
+
 # GeckWatch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
