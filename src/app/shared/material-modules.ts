@@ -8,7 +8,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { MatIconModule, MatMenuModule, MatButtonToggleModule } from '@angular/material';
+import { MatIconModule, MatMenuModule, MatButtonToggleModule, MatTabsModule } from '@angular/material';
 
 export const materialModules: any[] = [
     MatDatepickerModule, MatNativeDateModule,
@@ -16,5 +16,6 @@ export const materialModules: any[] = [
     MatFormFieldModule, MatInputModule,
     MatButtonModule, MatTooltipModule,
     MatProgressBarModule, MatSnackBarModule,
-    MatIconModule, MatMenuModule, MatButtonToggleModule
+    MatIconModule, MatMenuModule, MatButtonToggleModule,
+    MatTabsModule
 ];
