@@ -42,3 +42,7 @@ font-size: xx-large;
 .font-xxx-large {
 font-size: -webkit-xxx-large;
 }
+
+.border-color-grey {
+  border-color: #d3d1d3 !important;
+}
