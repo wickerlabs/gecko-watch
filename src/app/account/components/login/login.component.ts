@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
       this.isLoggingIn = false;
       this.invalidCredentials = true;
       // change route to profile
-      window.location.href = '#/dashboard';
+      window.location.href = '#/home';
     }, 3000);
   }
 

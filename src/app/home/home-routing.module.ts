@@ -1,17 +1,17 @@
-import {  } from './components';
+import { ApplicationsComponent } from './components';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 const homeRoutes: Routes = [
     {
       path: '',
-      redirectTo: 'home',
+      redirectTo: 'applications',
       pathMatch: 'full'
     },
-    // {
-    //   path: 'list',
-    //   component: UsersListComponent
-    // }
+    {
+      path: 'applications',
+      component: ApplicationsComponent
+    }
   ];
 
 @NgModule({
