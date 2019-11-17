@@ -8,5 +8,8 @@
     display: block;
 }
 
+.margin-top-40 {
+    margin-top: 45%;
+}
 
 @media (max-width: 990px) {}

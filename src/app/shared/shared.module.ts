@@ -16,7 +16,7 @@ import { materialModules } from './material-modules';
   declarations: [
     ...sharedComponents
   ],
-  exports: [...sharedComponents],
+  exports: [...sharedComponents, ...materialModules],
   providers: [...services]
 })
 export class SharedModule { }
