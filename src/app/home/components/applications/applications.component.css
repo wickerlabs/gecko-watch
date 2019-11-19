@@ -2,3 +2,7 @@
 .application-view-height {
     height: 750px;
 }
+
+.border-view {
+    border: 0.02px solid rgba(0, 0, 0, 0.125);
+}
